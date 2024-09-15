@@ -1,0 +1,217 @@
+:root {
+    --background1: #000000;
+    --background2: #31363F;
+    --heading: #41C9E2;
+    --heading2: #DFF5FF;
+    --text: #EEEEEE;
+}
+* {
+    background-color: var(--background1);
+    color: var(--heading);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body {
+    background-color: var(--background1);
+}
+nav .logo {
+    padding-top: 4rem;
+}
+nav .logo a{
+    color: var(--heading);
+    
+    text-decoration: none;
+    transition: text-shadow 0.2s ease;
+}
+nav .logo a:hover {
+    color: var(--text);
+    text-shadow: 1px 1px #41C9E2;
+}
+.pages {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+nav .pages div a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    transition: text-shadow 0.2s ease;
+}
+nav .pages div a:hover {
+    color: var(--heading);
+    text-shadow: 1px 1px #41C9E2;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding-top: 10%;
+}
+
+.info {
+    text-align: end;
+    max-width: 35rem;
+}
+
+.info h1 {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 5px 5px var(--heading);
+}
+.info h2 {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--text);
+}
+
+.info h3 {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--text)
+}
+
+#img-heading {
+    width: 25rem; 
+    height:auto;
+    border-radius: 50%;
+}
+
+#img-heading:hover{
+    box-shadow: 0 0 5px 5px var(--heading);
+}
+
+.about {
+    padding-top: 5rem;
+}
+.about h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+.about p{
+    color: var(--text);
+    font-size: 1.5rem;
+    margin: 1rem 20rem;
+}
+.about button {
+    color: var(--heading);
+    margin-left: 45%;
+    border-color: var(--heading);
+}
+.about button:hover {
+    box-shadow: 0 0 5px 5px var(--heading);
+}
+.experience {
+    padding-top: 5rem;
+}
+.company {
+    padding-left:25%;
+    padding-right: 25%;
+}
+.experience h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.company-heading {
+    display: flex;
+    gap: 5%
+}
+
+.company ul li {
+    color: var(--text);
+}
+.certificate img{
+    width: 30%;
+}
+
+/* Add some padding and alignment to the certificates */
+.certificates {
+    padding: 20px;
+    text-align: center;
+}
+.certificates h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+}
+
+.certificate {
+    padding: 15px;
+    border: 1px solid var(--heading);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.certificate:hover {
+    box-shadow: 0 0 5px 5px var(--heading);
+}
+
+.col-md-4 a{
+    text-decoration: none;
+}
+
+.certificate h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.certificate h3 {
+    font-size: 1.2rem;
+    color: var(--heading2);
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.languages div {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 2px solid var(--heading);
+    border-radius: 3px;
+}
+.languages div:hover {
+    box-shadow: var(--heading);
+}
+.projects h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.col-md-4 h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.col-md-4 h3 {
+    color: var(--heading2);
+    text-align: center;
+    font-style: italic;
+}
+
+.col-md-4 p {
+    color: var(--text);
+}
+
+#project-button button{
+    text-decoration: none;
+    color: var(--heading);
+    border: 2px solid var(--heading);
+    margin-left: 40%;
+    margin-top: 1.5rem;
+}
+
+#project-button button:hover{
+    box-shadow: 0 0 5px 5px var(--heading);
+}
