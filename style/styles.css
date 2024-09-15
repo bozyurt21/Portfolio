@@ -81,6 +81,18 @@ nav .pages div a:hover {
 #img-heading:hover{
     box-shadow: 0 0 5px 5px var(--heading);
 }
+.social i{
+    color: var(--heading);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3%;
+    border: 2px solid var(--heading);
+    border-radius: 50%;
+}
+
+.social i:hover {
+    box-shadow: 0 0 5px 5px var(--heading);
+}
 
 .about {
     padding-top: 5rem;
@@ -94,12 +106,12 @@ nav .pages div a:hover {
     font-size: 1.5rem;
     margin: 1rem 20rem;
 }
-.about button {
+.about a {
     color: var(--heading);
     margin-left: 45%;
     border-color: var(--heading);
 }
-.about button:hover {
+.about a:hover {
     box-shadow: 0 0 5px 5px var(--heading);
 }
 .experience {
