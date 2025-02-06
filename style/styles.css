@@ -1,283 +1,163 @@
-:root {
+/* CSS Reset & Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CSS Variables */
+  :root {
     --background1: #F5EFFF;
-    --background2: #E5D9F2;
     --heading: #A294F9;
     --heading2: #CDC1FF;
     --text: #000000;
-}
-* {
+  }
+  
+  /* Global Styles */
+  body {
     background-color: var(--background1);
     color: var(--heading);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-body {
-    background-color: var(--background1);
-}
-html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Smooth Scrolling */
+  html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-section {
-    padding-top: 5.5rem;
+  }
+  
+  /* Navbar Overrides */
+  .navbar-brand,
+  .nav-link {
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover,
+  .navbar-brand:hover {
+    color: var(--text);
+  }
+  
+  /* Head Section: Full viewport height */
+  #head {
     min-height: 100vh;
-}
-nav .logo {
-    padding-top: 4rem;
-}
-nav .logo a{
-    color: var(--heading);
-    
-    text-decoration: none;
-    transition: text-shadow 0.2s ease;
-}
-nav .logo a:hover {
-    color: var(--text);
-    text-shadow: 1px 1px #41C9E2;
-}
-.pages {
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-}
-nav .pages div a {
-    text-decoration: none;
-    color: var(--text);
-    font-size: 1.5rem;
-    transition: text-shadow 0.2s ease;
-}
-nav .pages div a:hover {
-    color: var(--heading);
-    text-shadow: 1px 1px #41C9E2;
-}
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    padding-top: 10%;
-}
-
-.info {
-    text-align: end;
-    max-width: 35rem;
-}
-
-.info h1 {
-    font-size: 5rem;
-    letter-spacing: 0.5rem;
-    text-shadow: 0 0 5px 5px var(--heading);
-}
-.info h2 {
-    font-size: 3rem;
-    font-style: italic;
-    color: var(--text);
-}
-
-.info h3 {
-    font-size: 2rem;
-    font-style: italic;
-    color: var(--text)
-}
-
-#img-heading {
-    width: 25rem; 
-    height:auto;
+  }
+  
+  /* Head Section Image */
+  #img-heading {
+    max-width: 250px;
     border-radius: 50%;
-}
-
-#img-heading:hover{
-    box-shadow: 0 0 5px 5px var(--heading);
-}
-.social i{
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #img-heading:hover {
+    box-shadow: 0 0 10px var(--heading);
+  }
+  
+  /* Social Icons */
+  .social a {
+    margin: 0 0.5rem;
+  }
+  
+  .social i {
     color: var(--heading);
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 3%;
+    font-size: 1.75rem;
     border: 2px solid var(--heading);
     border-radius: 50%;
-}
-
-.social i:hover {
-    box-shadow: 0 0 5px 5px var(--heading);
-}
-
-.about {
-    padding-top: 5rem;
-}
-.about h1 {
-    text-align: center;
-    font-size: 4rem;
-}
-.about p{
+    padding: 0.5rem;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .social i:hover {
+    box-shadow: 0 0 10px var(--heading);
     color: var(--text);
-    font-size: 1.5rem;
-    margin: 1rem 20rem;
-}
-.about a {
+  }
+  
+  /* Section Headings */
+  section h1 {
+    font-weight: bold;
+  }
+  
+  /* About Section */
+  #about p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Card Styles for Experience, Projects & Certifications */
+  .card {
+    background-color: var(--background1);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
     color: var(--heading);
-    margin-left: 45%;
-    border-color: var(--heading);
-}
-.about a:hover {
-    box-shadow: 0 0 5px 5px var(--heading);
-}
-.experience {
-    padding-top: 5rem;
-}
-.company {
-    padding-left:25%;
-    padding-right: 25%;
-    display: flex;
-    max-width: max-content;
-    gap: 10%;
-    max-height: max-content;
-}
-.company-card {
-    border: 3px solid var(--heading);
-    padding: 1rem;
-    border-radius: 15%;
-}
-.row {
-    margin: 0 auto;
-}
-.card{
-    background-color: var(--background2);
-    margin: 1rem;
-}
-h5 .card-title {
-    color: var(--heading);
-}
-.card-text {
-    color: var(--text)
-}
-.experience h1 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 5rem;
-    padding-top: 5rem;
-}
-.company-heading {
-    text-align: center;
-}
-#date {
-    font-size: small;
-    text-align: center;
-
-}
-
-.company ul li {
-    color: var(--text);
-}
-.certificate img{
-    width: 30%;
-}
-
-/* Add some padding and alignment to the certificates */
-.certificates {
-    padding: 20px;
-    text-align: center;
-}
-.certificates h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-.certificate img {
-    max-width: 100%;
-    height: auto;
-}
-
-.certificate {
-    padding: 15px;
-    border: 1px solid var(--heading);
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.certificate:hover {
-    box-shadow: 0 0 5px 5px var(--heading);
-}
-.col-md-4 {
-
-    justify-content: center;
-}
-.col-md-4 a{
-    text-decoration: none;
-}
-
-.certificate h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-.certificate h3 {
-    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-subtitle {
     color: var(--heading2);
-}
-
-.languages {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.languages div {
-    margin: 5px;
+  }
+  
+  .card-text {
+    color: var(--text);
+  }
+  
+  /* Certificate Image Styling */
+  .certificate-img {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+    display: block;
+  }
+  
+  /* Language Tags */
+  .languages div {
+    margin: 3px;
     padding: 5px 10px;
     border: 2px solid var(--heading);
     border-radius: 3px;
-}
-.languages div:hover {
-    box-shadow: var(--heading);
-}
-.projects {
-    margin: 0 1rem;
-}
-.projects h1 {
-    font-size: 4rem;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
-.col-md-4 {
-    margin-bottom: 1rem;
-}
-.col-md-4 h2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.col-md-4 h3 {
-    color: var(--heading2);
-    text-align: center;
-    font-style: italic;
-}
-
-.col-md-4 p {
-    color: var(--text);
-}
-
-
-#project-button button{
-    text-decoration: none;
-    color: var(--heading);
-    border: 2px solid var(--heading);
-    margin-left: 40%;
-    margin-top: 1.5rem;
-}
-
-#project-button button:hover{
-    box-shadow: 0 0 5px 5px var(--heading);
-}
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .languages div:hover {
+    background-color: var(--heading);
+    color: #fff;
+  }
+  
+  /* Button Overrides - All buttons appear purple */
+  .btn, 
+  .btn-primary, 
+  .btn-outline-primary {
+    background-color: var(--heading) !important;
+    border-color: var(--heading) !important;
+    color: #fff !important;
+  }
+  
+  .btn:hover, 
+  .btn-primary:hover, 
+  .btn-outline-primary:hover {
+    background-color: #8A78E6 !important;
+    border-color: #8A78E6 !important;
+    color: #fff !important;
+  }
+  
+  /* Override Bootstrap border-primary to use purple */
+  .border-primary {
+    border-color: var(--heading) !important;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2.5rem;
+    }
+    .fs-3 {
+      font-size: 1.75rem;
+    }
+    .fs-5 {
+      font-size: 1.25rem;
+    }
+  }
+  
