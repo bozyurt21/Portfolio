@@ -1,9 +1,9 @@
 :root {
-    --background1: #000000;
-    --background2: #31363F;
-    --heading: #41C9E2;
-    --heading2: #DFF5FF;
-    --text: #EEEEEE;
+    --background1: #F5EFFF;
+    --background2: #E5D9F2;
+    --heading: #A294F9;
+    --heading2: #CDC1FF;
+    --text: #000000;
 }
 * {
     background-color: var(--background1);
@@ -13,6 +13,25 @@
 }
 body {
     background-color: var(--background1);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+section {
+    padding-top: 5.5rem;
+    min-height: 100vh;
 }
 nav .logo {
     padding-top: 4rem;
@@ -29,7 +48,7 @@ nav .logo a:hover {
 }
 .pages {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
     justify-content: end;
 }
 nav .pages div a {
@@ -120,6 +139,28 @@ nav .pages div a:hover {
 .company {
     padding-left:25%;
     padding-right: 25%;
+    display: flex;
+    max-width: max-content;
+    gap: 10%;
+    max-height: max-content;
+}
+.company-card {
+    border: 3px solid var(--heading);
+    padding: 1rem;
+    border-radius: 15%;
+}
+.row {
+    margin: 0 auto;
+}
+.card{
+    background-color: var(--background2);
+    margin: 1rem;
+}
+h5 .card-title {
+    color: var(--heading);
+}
+.card-text {
+    color: var(--text)
 }
 .experience h1 {
     text-align: center;
@@ -127,10 +168,13 @@ nav .pages div a:hover {
     margin-bottom: 5rem;
     padding-top: 5rem;
 }
-
 .company-heading {
-    display: flex;
-    gap: 5%
+    text-align: center;
+}
+#date {
+    font-size: small;
+    text-align: center;
+
 }
 
 .company ul li {
@@ -165,7 +209,10 @@ nav .pages div a:hover {
 .certificate:hover {
     box-shadow: 0 0 5px 5px var(--heading);
 }
+.col-md-4 {
 
+    justify-content: center;
+}
 .col-md-4 a{
     text-decoration: none;
 }
@@ -195,13 +242,18 @@ nav .pages div a:hover {
 .languages div:hover {
     box-shadow: var(--heading);
 }
+.projects {
+    margin: 0 1rem;
+}
 .projects h1 {
     font-size: 4rem;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
-
+.col-md-4 {
+    margin-bottom: 1rem;
+}
 .col-md-4 h2 {
     font-size: 3rem;
     text-align: center;
@@ -216,6 +268,7 @@ nav .pages div a:hover {
 .col-md-4 p {
     color: var(--text);
 }
+
 
 #project-button button{
     text-decoration: none;
