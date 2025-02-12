@@ -125,6 +125,12 @@
     background-color: var(--heading);
     color: #fff;
   }
+  .bold {
+    font-weight: 600;
+  }
+  .bolder {
+    font-weight: 650;
+  }
   
   /* Button Overrides - All buttons appear purple */
   .btn, 
