@@ -122,9 +122,130 @@
   <section id="projects" class="py-5">
     <div class="container">
       <h1 class="text-center mb-5">Projects</h1>
-      <div class="row">
+      <!-- Filter Buttons -->
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="Swift">Swift</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="Kotlin">Kotlin</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="Java">Java</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="Python">Python</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="HTML">HTML/CSS/JS</button>
+          
+          
+          
+          
+        </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center" >Weather App</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text">Developed a Weather app project in IOS using openWeatherMap API. The app fetches and displays current weather data based on the user's location or the city they searched for. 
+                Used CLLocationManager from Swift to get the current location of the user and fetch weather data accordingly. Since fetching data takes time, I used a DispatchQueue to ensure the UI remains responsive while data is being fetched. 
+                Used MVC design pattern to separate the data, view, and controller logic for better maintainability. On top of that, I used delegate pattern to handle location and text field updates.</p>
+                <div>Swift</div>
+            </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Weather-App---IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center" >Tipsy App</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text"> Developed a Tipsy app project in IOS using Swift. The app calculates the tip amount based on the bill amount and the selected tip percentage. 
+                It allows users to split the bill among multiple people and provides easy calculations. Used MVC design pattern to separate the data, view, and controller logic for better maintainability.
+                On top of that, I used segue to navigate between different view controllers and pass data between them.</p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Swift</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Giving-Tip-App---IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center" >Egg Timer</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text">Developed Egg Timer app to show the time left for the egg to be cooked based on the selected hardness level. Used Timer to update the time left every second. 
+                Showed the progression of the egg cooking by using a progress bar.</p>
+              </p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Swift</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/EggTimer" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center">BMI Calculator</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text">Developed BMI Calculator app to calculate the Body Mass Index based on the user's height and weight.
+                 Used UISlider to allow users to select their height and weight. Used segue to navigate between different view
+                  controllers and pass data between them. Also, used MVC design pattern to separate the data, view, and controller logic for better maintainability.
+              </p>
+
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Swift</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/BMI-Calculator-IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center">Quiz App</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text">Developed Quiz app using MVC design pattern and structures to generate QuizBrain and quiz Questions.</p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Swift</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Quiz-App-IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4 mb-4 project-card" data-lang="Swift">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center">Xylophone App</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (IOS)</h3>
+              <p class="card-text">Developed Xylophone app that creates a sound in each time a user click on the Xylophone keys. Used AVAudioPlayer to play the sound of the each key using a url as an input from Bundle that has the key name as a resource and the sound file extension.</p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Swift</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Xylophone-Project-IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
         <!-- Project 1 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="HTML">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">Kirke'nin Adası</h2>
@@ -144,7 +265,7 @@
           </div>
         </div>
         <!-- Project 2 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="Python">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">Sneak Game</h2>
@@ -162,7 +283,7 @@
           </div>
         </div>
         <!-- Project 3 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="HTML">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">Vobin Website</h2>
@@ -176,13 +297,13 @@
                 <div>JavaScript</div>
               </div>
               <div class="text-center">
-                <a href="https://github.com/bozyurt21/Vobin" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+                <a href="https://vobin.com.tr" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 4 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="Java">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">Alpha Vantage Project</h2>
@@ -200,7 +321,7 @@
           </div>
         </div>
         <!--Project 5-->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="Java">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">TCP/SSL Connection to the Server</h2>
@@ -220,7 +341,7 @@ also in client side, ensuring smooth client connection.
           </div>
         </div>
         <!--Project 6-->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 project-card" data-lang="Kotlin">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title text-center">Tic-Tac-Toe Game</h2>
@@ -237,9 +358,61 @@ gameplay logic and UI integration for better user experience.
             </div>
           </div>
         </div>
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Kotlin">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center">Weather App</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">Mobile Development (Android)</h3>
+              <p class="card-text">This is a Jetpack Compose-based Weather app for Android developed as part of Koç University's COMP 319A - Mobile Device Programming course.
+It fetches current weather data, displays location-based weather information, and provides an intuitive user interface.
+              </p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Kotlin</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Weather-App" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
+
+  <script>
+  // Filter functionality
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
+
+
+  window.addEventListener("DOMContentLoaded", () => {
+  projectCards.forEach(card => {
+    if (card.getAttribute("data-lang") === "Swift") {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+
+// Handle button clicks
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.getAttribute("data-filter");
+
+    projectCards.forEach(card => {
+      if (filter === "all" || card.getAttribute("data-lang") === filter) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+</script>
 
   <!-- Certifications Section -->
   <section id="certificates" class="py-5">
@@ -357,3 +530,4 @@ gameplay logic and UI integration for better user experience.
           crossorigin="anonymous"></script>
 </body>
 </html>
+
