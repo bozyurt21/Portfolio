@@ -69,10 +69,11 @@
           </p>
           <h3 class="text-center mb-4 bolder"> Technical Expertise:</h2>
           <ul>
-            <li><span class="bold">Programming:</span> Java, Python, C, C++, JavaScript, SQL</li>
+            <li><span class="bold">Programming:</span> Java, Python, C, C++, JavaScript, SQL, Go</li>
             <li><span class="bold">Databases:</span> SQLite, MySQL, PostgreSQL</li>
-            <li><span class="bold">Tools & Frameworks:</span> REST API, Flask, Postman, Wireshark, Bootstrap</li>
-            <li><span class="bold">Concepts:</span> Object-Oriented Programming, Data Structures & Algorithms, Java Multithreading, Socket Programming</li>
+            <li><span class="bold">Tools & Frameworks:</span> REST API, Flask, Postman, Bootstrap, Gin, SwiftUI, UIKit, Jetpack Compose</li>
+            <li><span class="bold">DevOps & Messaging:</span> Docker, Docker compose, RabbitMQ</li>
+            <li><span class="bold">Concepts:</span> Version Control (Git), Object-Oriented Programming, Data Structures & Algorithms, Java Multithreading, Socket Programming</li>
           </ul>
           <div class="text-center mt-4">
             <a href="./docs/bensuozyurtCV.pdf" target="_blank" class="btn btn-primary">My Resume</a>
@@ -130,6 +131,7 @@
           <button class="btn btn-outline-primary filter-btn" data-filter="Java">Java</button>
           <button class="btn btn-outline-primary filter-btn" data-filter="Python">Python</button>
           <button class="btn btn-outline-primary filter-btn" data-filter="HTML">HTML/CSS/JS</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="Go">Go</button>
         </div>
 
       <div class="row g-4 justify-content-center">
@@ -142,7 +144,10 @@
               <p class="card-text">Developed a Weather app project in IOS using openWeatherMap API. The app fetches and displays current weather data based on the user's location or the city they searched for. 
                 Used CLLocationManager from Swift to get the current location of the user and fetch weather data accordingly. Since fetching data takes time, I used a DispatchQueue to ensure the UI remains responsive while data is being fetched. 
                 Used MVC design pattern to separate the data, view, and controller logic for better maintainability. On top of that, I used delegate pattern to handle location and text field updates.</p>
-                <div>Swift</div>
+                <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                  <div>Swift</div>
+                </div>
+                
             </div>
               <div class="text-center">
                 <a href="https://github.com/bozyurt21/Weather-App---IOS" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
@@ -368,6 +373,23 @@ It fetches current weather data, displays location-based weather information, an
               </div>
               <div class="text-center">
                 <a href="https://github.com/bozyurt21/Weather-App" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 project-card" data-lang="Go">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title text-center">Service Marketplace</h2>
+              <h3 class="card-subtitle mb-3 text-center fst-italic">API</h3>
+              <p class="card-text">This is a two-service marketplace backend in Go. Generated REST API endpoints for creating new rating, listing all ratings, looking ratings by ID and return providers average rating in rating service. On notification service, handled sending notifications when a new rating created using RabbitMQ. Added an endpoint to see notifications send for certain provider.
+              </p>
+              <div class="languages d-flex flex-wrap justify-content-center mb-3">
+                <div>Go</div>
+              </div>
+              <div class="text-center">
+                <a href="https://github.com/bozyurt21/Service-Marketplace" target="_blank" class="btn btn-outline-primary">Go to GitHub</a>
               </div>
             </div>
           </div>
